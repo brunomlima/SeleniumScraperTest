@@ -14,7 +14,7 @@ namespace SeleniumScraperTest
             MailMessage objEmail = new MailMessage();
 
             //remetente do e-mail 
-            objEmail.From = new MailAddress("tbviagens@tbviagens.com.br", "TBViagens");
+            objEmail.From = new MailAddress("xx@xx.com.br", "xx");
 
             //destinatários do e-mail 
             MailAddress oTo = new MailAddress(emailDestinatario, nomeDestinatario);
@@ -46,10 +46,10 @@ namespace SeleniumScraperTest
             SmtpClient objSmtp = new SmtpClient();
 
             System.Net.NetworkCredential autenticacao = new System.Net.NetworkCredential();
-            autenticacao.UserName = "webmaster@tbviagens.com.br";
-            autenticacao.Password = "tbv123Web";
+            autenticacao.UserName = "xxx@xx.com.br";
+            autenticacao.Password = "xx";
             //alocamos o endereço do host para enviar os e-mails, smtp2.locaweb.com.br 
-            objSmtp.Host = "smtp.tbviagens.com.br";
+            objSmtp.Host = "smtp.xx.com.br";
             objSmtp.UseDefaultCredentials = false;
             objSmtp.Port = 587;
             objSmtp.Credentials = autenticacao;
